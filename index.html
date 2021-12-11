@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style>
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin:0px;
+  height:100%;
+}
+body {
+  background: url("images/page.png") no-repeat center fixed;
+  background-size: cover;
+  display: inline-block;
+  overflow: auto;
+  width: 2000vw;
+}
+div.prince {
+  text-align: center;
+  /* height:100vh; */
+  margin:0;
+  padding:0;
+  position: relative;
+  /* background-color: black; */
+}
+div.prince2 {
+  /* height:100vh; */
+  margin:0;
+  position: relative;
+  /* background-color: black; */
+}
+.title {
+  font-family: fantasy;
+  white-space: nowrap;
+  text-align: center;
+  top:15vh;
+  left:30vw;
+  font-size:3vw;
+  z-index: -1;
+  position: absolute;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.words{
+  font-family: fantasy;
+  white-space: nowrap;
+  text-align: center;
+  font-size:3vw;
+  z-index: -1;
+  position: absolute;
+}
+.rotate {
+  animation: rotation 5s;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
+</style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+    <title>Journeys of the Little Prince</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="prince">
+      <h1 class='title'>Journeys of the Little Prince</h1>
+      <img src='images/head.png' alt='head' style="height:60vh; position: absolute; top:40vh; margin:0; left:35vw; z-index:1;">
+      <image onclick="Playclip()" src='images/plane.png' alt='plane' style="height:20vh; position: fixed; z-index:10; top:15vh; left:12vw;"
+    </div>
+    <div class="prince2">
+      <img onmouseover="Playclip1()" src='images/B612.png' alt='B612' style="height:80vh; position: absolute; top:20vh; margin:0; left:150vw; z-index:1;">
+      <img src='images/baobab.png' alt='baobab' style="height:50vh; position: absolute; top:0vh; margin:0; left:300vw; z-index:1;">
+      <img src='images/bao.png' alt='bao' style="height:100vh; position: absolute; top:0vh; margin:0; left:360vw; z-index:11;">
+      <img src='images/baob.png' alt='baob' style="height:100vh; position: absolute; top:0vh; margin:0; left:360vw; z-index:1;">
+      <img onmouseover="PlayFire()" src='images/breakfast.png' alt='breakfast' style="height:50vh; position: absolute; top:50vh; margin:0; left:240vw; z-index:2;">
+      <img src='images/sunset.png' alt='sunset' style="height:90vh; position: absolute; top:8vh; margin:0; left:500vw; z-index:1;">
+      <img src='images/field.png' alt='field' style="height:60vh; position: absolute; top:30vh; margin:0; left:580vw; z-index:1;">
+      <img src='images/rose.png' alt='rose' style="height:70vh; position: absolute; top:30vh; margin:0; left:665vw; z-index:1;">
+      <img src='images/glass.png' alt='glass' style="height:60vh; position: absolute; top:40vh; margin:0; left:750vw; z-index:1;">
+      <img onmouseover="PlayFly()" src='images/fly.png' alt='fly' style="height:50vh; position: absolute; top:20vh; margin:0; left:810vw; z-index:1;">
+      <img src='images/planets.png' alt='planets' style="height:100vh; position: absolute; top:0vh; margin:0; left:870vw; z-index:11;">
+      <img onclick="PlayKing()" src='images/king.png' alt='king' style="height:70vh; position: absolute; top:30vh; margin:0; left:1000vw; z-index:1;">
+      <img onclick="PlayConceited()" src='images/conceited.png' alt='conceited' style="height:60vh; position: absolute; top:10vh; margin:0; left:1100vw; z-index:1;">
+      <img onclick="PlayDrinker()" src='images/drinker.png' alt='drinker' style="height:60vh; position: absolute; top:40vh; margin:0; left:1200vw; z-index:1;">
+      <img onmouseover="PlayCoin()" src='images/businessman.png' alt='business' style="height:60vh; position: absolute; top:0vh; margin:0; left:1300vw; z-index:1;">
+      <img class="rotate linear infinite" onmouseover="Darken(this)" onmouseout="Normal(this)" src='images/lamp.png' alt='lamp' style="height:70vh; position: absolute; top:15vh; margin:0; left:1400vw; z-index:1;">
+      <img onmouseover="PlayType()" src='images/books.png' alt='books' style="height:50vh; position: absolute; top:20vh; margin:0; left:1500vw; z-index:1;">
+      <img src='images/earth.png' alt='earth' style="height:70vh; position: absolute; top:15vh; margin:0; left:1600vw; z-index:1;">
+      <img src='images/head.png' alt='head' style="height:70vh; position: absolute; top:15vh; margin:0; left:1910vw; z-index:1;">
+      <h1 class='words' style="font-family: fantasy;
+      white-space: nowrap;
+      text-align: center;
+      top:30vh;
+      left:1650vw;
+      font-size:3vw;
+      z-index: -1;
+      position: absolute;">He landed on Earth...</h1>
+      <h1 class='words' style='top:40vh; left:1700vw;'>Have you ever seen him?</h1>
+      <h1 class='words' style='top:50vh; left:1750vw;'>Please tell me if you have...</h1>
+      <h1 class='words' style='top:60vh; left:1810vw;'>He is my best friend...</h1>
+      <h1 class='words' style='top:50vh; left:1970vw;'>Fin.</h1>
+      <h1 class='words' style='top:0vh; left:140vw;'>The little prince lives on a tiny planet.</h1>
+      <h1 class='words' style='top:30vh; left:205vw;'>So small that he cooked breakfast on the volcanos.</h1>
+      <h1 class='words' style='top:60vh; left:280vw;'>"Beware of Baobabs!" He warned me.</h1>
+      <h1 class='words' style='top:30vh; left:425vw;'>He likes seeing sunsets.</h1>
+      <h1 class='words' style='top:50vh; left:425vw;'>One day he watched it for 44 times!</h1>
+      <h1 class='words' style='top:10vh; left:560vw;'>One day a special seed fell on his planet.</h1>
+      <h1 class='words' style='top:60vh; left:617vw;'>It was the seed of a rose!</h1>
+      <h1 class='words' style='top:5vh; left:660vw;'>He cared for her, but she was vain.</h1>
+      <h1 class='words' style='top:20vh; left:720vw;'>They were young, and soon they fell into fight.</h1>
+      <h1 class='words' style='top:70vh; left:800vw;'>He ran away with a herd of birds.</h1>
+      <h1 class='words' style='top:30vh; left:935vw;'>He met a king on his planet...</h1>
+      <h1 class='words' style='top:70vh; left:1050vw;'>He met a funny man...</h1>
+      <h1 class='words' style='top:40vh; left:1150vw;'>He met a strange man...</h1>
+      <h1 class='words' style='top:30vh; left:1250vw;'>He met a busy man...</h1>
+      <h1 class='words' style='top:60vh; left:1350vw;'>He met a tired man...</h1>
+      <h1 class='words' style='top:70vh; left:1470vw;'>He met an old man that takes notes of things...</h1>
+      <h1 class='words' style='top:50vh; left:1570vw;'>And now...</h1>
+    </div>
+    </div>
+    <audio src="audio/plane.aiff" id="plane"></audio>
+    <audio src="audio/king.mp3" id="king"></audio>
+    <audio src="audio/drinker.mp3" id="drinker"></audio>
+    <audio src="audio/conceited.mp3" id="conceited"></audio>
+    <audio src="audio/fly.mp3" id='fly'></audio>
+    <audio src="audio/coins.wav" id='coin'></audio>
+    <audio src="audio/fire.mp3" id='fire'></audio>
+    <audio src="audio/type.mp3" id='type'></audio>
+    <script type="text/javascript">
+			function Playclip(){
+	       var clip1=document.getElementById("plane");
+	       clip1.play();
+      }
+      function PlayKing(){
+	       var king=document.getElementById("king");
+	       king.play();
+      }
+      function PlayDrinker(){
+	       var drinker=document.getElementById("drinker");
+	       drinker.play();
+      }
+      function PlayConceited(){
+	       var conceited=document.getElementById("conceited");
+	       conceited.play();
+      }
+      function PlayFly(){
+	       var fly=document.getElementById("fly");
+	       fly.play();
+      }
+      function PlayCoin(){
+	       var coin=document.getElementById("coin");
+	       coin.play();
+      }
+      function PlayFire(){
+	       var fire=document.getElementById("fire");
+	       fire.play();
+      }
+      function PlayType(){
+	       var type=document.getElementById("type");
+	       type.play();
+      }
+      function Darken(x){
+        x.style.filter = "brightness(50%)";
+      }
+      function Normal(x){
+        x.style.filter = "brightness(100%)";
+      }
+    </script>
+  </body>
+</html>
